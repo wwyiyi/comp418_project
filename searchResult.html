@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+    <!--[if IE 9 ]><html class="ie9"><![endif]-->
+    
+<!-- Mirrored from byrushan.com/projects/ma/1-5-2/jquery/media.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 May 2016 10:23:49 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Search for trips</title>
+        
+        <!-- Vendor CSS -->
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/lightgallery/light-gallery/css/lightGallery.css" rel="stylesheet">
+        <link href="vendors/bower_components/mediaelement/build/mediaelementplayer.css" rel="stylesheet">
+        <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">        
+            
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <header id="header" class="clearfix" data-current-skin="purple"> 
+            <form>
+                <div class="col-sm-3"> 
+                    <fieldset class="form-group">
+                        <h5 style="color:white">Departure City </h5>
+                        <select class="form-control" id="departure" name="departure">
+                            <option>Guangzhou</option>
+                            <option>Dongguan</option>
+                            <option>Hong Kong</option>
+                            <option>Shenzhen</option>
+                        </select>
+
+                        </fieldset>
+                    </fieldset>
+                </div>
+                
+                <div class="col-sm-3"> 
+                    <fieldset class="form-group">
+                        <h5 style="color:white">Destination City </h5>
+                        <select class="form-control" id="destination" name="destination">
+                            <option>Guangzhou</option>
+                            <option>Dongguan</option>
+                            <option>Hong Kong</option>
+                            <option>Shenzhen</option>
+                        </select>
+   
+                </div>
+                <div class="col-sm-2"> 
+                    <h5 style="color:white">Date From </h5>
+                    <input type="date" id="from" name="from">
+                </div>
+                <div class="col-sm-2"> 
+                    <h5 style="color:white">To</h5>
+                    <input type="date" id="to" name="to">
+                </div>
+
+                <div class="col-sm-2"> 
+                    <br/>
+                    <button type="submit" class="btn btn-primary btn-block">SEARCH</button>
+                </div>
+            </form>
+        </header>
+        
+        <section id="main">
+            <section id="content">
+                <div class="container">
+                    <div class="block-header">
+                        <h2>Road Trip Pals</h2>
+                    
+                        <ul class="actions">
+                            <li>
+                                <a href="#">
+                                    <i class="zmdi zmdi-trending-up"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="zmdi zmdi-check-all"></i>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown">
+                                    <i class="zmdi zmdi-more-vert"></i>
+                                </a>
+                    
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                        <a href="#">Refresh</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Manage Widgets</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Widgets Settings</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Search Result</h2>
+                    
+                            <ul class="actions">
+                                <li class="dropdown action-show">
+                                    <a href="#" data-toggle="dropdown">
+                                        <i class="zmdi zmdi-more-vert"></i>
+                                    </a>
+                    
+                                    <div class="dropdown-menu pull-right">
+                                        <p class="p-20">
+                                            You can put anything here
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="card-body card-padding">                    
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="thumbnail">
+                                        <img src="img/300x200.gif" alt="">
+                                        <div class="caption">
+                                            <h4>Thumbnail label</h4>
+                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                            
+                                            <div class="m-b-5">
+                                                <a href="#" class="btn btn-sm btn-primary" role="button">Join</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="thumbnail">
+                                        <img src="img/300x200.gif" alt="">
+                                        <div class="caption">
+                                            <h4>Thumbnail label</h4>
+                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                            
+                                            <div class="m-b-5">
+                                                <a href="#" class="btn btn-sm btn-primary" role="button">Join</a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="thumbnail">
+                                        <img src="img/300x200.gif" alt="">
+                                        <div class="caption">
+                                            <h4>Thumbnail label</h4>
+                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                            
+                                            <div class="m-b-5">
+                                                <a href="#" class="btn btn-sm btn-primary" role="button">Join</a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="thumbnail">
+                                        <img src="img/300x200.gif" alt="">
+                                        <div class="caption">
+                                            <h4>Thumbnail label</h4>
+                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                            
+                                            <div class="m-b-5">
+                                                <a href="#" class="btn btn-sm btn-primary" role="button">Join</a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <footer id="footer">
+            Copyright &copy; 2016 Road Trip Pals
+            
+            <ul class="f-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </footer>
+
+        <!-- Page Loader -->
+        <div class="page-loader">
+            <div class="preloader pls-blue">
+                <svg class="pl-circular" viewBox="25 25 50 50">
+                    <circle class="plc-path" cx="50" cy="50" r="20" />
+                </svg>
+
+                <p>Please wait...</p>
+            </div>
+        </div>
+
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">Warning!!</h1>
+                <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+                <div class="iew-container">
+                    <ul class="iew-download">
+                        <li>
+                            <a href="http://www.google.com/chrome/">
+                                <img src="img/browsers/chrome.png" alt="">
+                                <div>Chrome</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.mozilla.org/en-US/firefox/new/">
+                                <img src="img/browsers/firefox.png" alt="">
+                                <div>Firefox</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.opera.com">
+                                <img src="img/browsers/opera.png" alt="">
+                                <div>Opera</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.apple.com/safari/">
+                                <img src="img/browsers/safari.png" alt="">
+                                <div>Safari</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                <img src="img/browsers/ie.png" alt="">
+                                <div>IE (New)</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Sorry for the inconvenience!</p>
+            </div>   
+        <![endif]-->
+    
+    
+        <!-- Javascript Libraries -->
+        <script src="http://byrushan.com/projects/ma/1-5-2/jquery/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="http://byrushan.com/projects/ma/1-5-2/jquery/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+                <script src="http://byrushan.com/projects/ma/1-5-2/jquery/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="http://byrushan.com/projects/ma/1-5-2/jquery/vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="http://byrushan.com/projects/ma/1-5-2/jquery/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="http://byrushan.com/projects/ma/1-5-2/jquery/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
+        <script src="http://byrushan.com/projects/ma/1-5-2/jquery/vendors/bower_components/lightgallery/light-gallery/js/lightGallery.min.js"></script>
+        <script src="http://byrushan.com/projects/ma/1-5-2/jquery/vendors/bower_components/mediaelement/build/mediaelement-and-player.min.js"></script>
+        
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+        
+        <script src="http://byrushan.com/projects/ma/1-5-2/jquery/js/functions.js"></script>
+    
+    </body>
+
+<!-- Mirrored from byrushan.com/projects/ma/1-5-2/jquery/media.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 May 2016 10:24:53 GMT -->
+</html>
