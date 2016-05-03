@@ -1,0 +1,55 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Search for a Trip</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.5">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1> Propose a Trip </h1> 
+			</div>
+
+			<form>
+				<div class="col-sm-3"> </div>
+				<div class="col-sm-6"> 
+		        <div class="form-group">
+		            <fieldset class="form-group">
+		                <label for="selectDepartureCity">Select Departure City </label>
+		                <select class="form-control" id="selectDeparture">
+		                    <option>Guangzhou</option>
+		                    <option>Dongguan</option>
+		                    <option>Hong Kong</option>
+		                    <option>Shenzhen</option>
+		                </select>	
+					</fieldset>
+		        </div>
+		        <div class="form-group">
+		            <fieldset class="form-group">
+		                <label for="selectDepartureCity">Select Destination City </label>
+		                <select class="form-control" id="selectDestination">
+		                    <option>Guangzhou</option>
+		                    <option>Dongguan</option>
+		                    <option>Hong Kong</option>
+		                    <option>Shenzhen</option>
+		                </select>	
+					</fieldset>
+		        </div>
+
+		        <div class="form-group">
+		        	<label for="selectDate">Date</label>
+		        	<br/>
+		        	<input type="date" id="selectDate" name="selectDate">
+		        </div>
+
+		        <br/>
+		        <button type="submit" class="btn btn-primary">Create Trip Now!</button>
+		    </div>
+		    </form>
+		</div>
+	</body>
+</html>
