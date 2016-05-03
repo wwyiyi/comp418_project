@@ -1,3 +1,4 @@
 finish:
 searchTrip
 createTrip
+vehicleRegistration
