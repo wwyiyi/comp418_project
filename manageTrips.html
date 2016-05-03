@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+    <!--[if IE 9 ]><html class="ie9"><![endif]-->
+    
+<!-- Mirrored from byrushan.com/projects/ma/1-5-2/jquery/profile-about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 May 2016 10:19:55 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Manage your trips</title>
+    
+        <!-- Vendor CSS -->
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">        
+        <link href="vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+            
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header id="header" class="clearfix" data-current-skin="pink">
+            <h1 style="color:white"> Manage Your Trips</h1>
+        </header>
+        
+        <section id="main">
+            <section id="content">
+                <div class="container">
+                    <div class="card">
+                        <div class="listview lv-bordered lv-lg">
+                            <div class="lv-header-alt clearfix">
+                                <h2 class="lvh-label hidden-xs">All Trips</h2>
+                                
+                                <div class="lvh-search">
+                                    <input type="text" placeholder="Start typing..." class="lvhs-input">
+                
+                                    <i class="lvh-search-close">&times;</i>
+                                </div>
+                                
+                                <ul class="lv-actions actions">
+                                    <li>
+                                        <a href="#" class="lvh-search-trigger">
+                                            <i class="zmdi zmdi-search"></i>
+                                        </a>
+                                    </li>
+                    
+                                    <li>
+                                        <a href="#">
+                                            <i class="zmdi zmdi-time"></i>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown" aria-expanded="true">
+                                            <i class="zmdi zmdi-sort"></i>
+                                        </a>
+                            
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>
+                                                <a href="#">Last Modified</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Last Edited</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Name</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Date</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="zmdi zmdi-info"></i>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown" aria-expanded="true">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+                            
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>
+                                                <a href="#">Refresh</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Listview Settings</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="lv-body">
+                                
+                                <div class="lv-item media">
+                                    <div class="checkbox pull-left">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            <i class="input-helper"></i>
+                                        </label>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Upcoming Trip on 09/05/2016, from Hong Kong to Shenzhen</div>
+                                        <ul class="lv-attrs">
+                                            <li>Date Created: 09/06/1988</li>
+                                            <li>No. of people joined: 4</li>
+                                            <li>Vehicle: Ford Fiesta</li>
+                                            <li>Price: $60 per person</li>
+                                        </ul>
+                                        
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="#" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="#">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="lv-item media">
+                                    <div class="checkbox pull-left">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            <i class="input-helper"></i>
+                                        </label>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Upcoming Trip on 09/05/2016, from Hong Kong to Shenzhen</div>
+                                        <ul class="lv-attrs">
+                                            <li>Date Created: 09/06/1988</li>
+                                            <li>No. of people joined: 4</li>
+                                            <li>Vehicle: Ford Fiesta</li>
+                                            <li>Price: $60 per person</li>
+                                        </ul>
+                                        
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="#" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="#">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="lv-item media">
+                                    <div class="checkbox pull-left">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            <i class="input-helper"></i>
+                                        </label>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Upcoming Trip on 09/05/2016, from Hong Kong to Shenzhen</div>
+                                        <ul class="lv-attrs">
+                                            <li>Date Created: 09/06/1988</li>
+                                            <li>No. of people joined: 4</li>
+                                            <li>Vehicle: Ford Fiesta</li>
+                                            <li>Price: $60 per person</li>
+                                        </ul>
+                                        
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="#" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="#">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="lv-item media">
+                                    <div class="checkbox pull-left">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            <i class="input-helper"></i>
+                                        </label>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Completed Trip on 09/05/2016, from Hong Kong to Shenzhen</div>
+                                        <ul class="lv-attrs">
+                                            <li>Date Created: 09/06/1988</li>
+                                            <li>No. of people joined: 4</li>
+                                            <li>Vehicle: Ford Fiesta</li>
+                                            <li>Price: $60 per person</li>
+                                        </ul>
+                                        
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="#" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="#">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <ul class="pagination lv-pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <i class="zmdi zmdi-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <i class="zmdi zmdi-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <footer id="footer">
+            Copyright &copy; 2015 Material Admin
+            
+            <ul class="f-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </footer>
+
+        <!-- Page Loader -->
+        <div class="page-loader">
+            <div class="preloader pls-blue">
+                <svg class="pl-circular" viewBox="25 25 50 50">
+                    <circle class="plc-path" cx="50" cy="50" r="20" />
+                </svg>
+
+                <p>Please wait...</p>
+            </div>
+        </div>
+
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">Warning!!</h1>
+                <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+                <div class="iew-container">
+                    <ul class="iew-download">
+                        <li>
+                            <a href="http://www.google.com/chrome/">
+                                <img src="img/browsers/chrome.png" alt="">
+                                <div>Chrome</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.mozilla.org/en-US/firefox/new/">
+                                <img src="img/browsers/firefox.png" alt="">
+                                <div>Firefox</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.opera.com">
+                                <img src="img/browsers/opera.png" alt="">
+                                <div>Opera</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.apple.com/safari/">
+                                <img src="img/browsers/safari.png" alt="">
+                                <div>Safari</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                <img src="img/browsers/ie.png" alt="">
+                                <div>IE (New)</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Sorry for the inconvenience!</p>
+            </div>   
+        <![endif]-->
+    
+    
+        <!-- Javascript Libraries -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+                <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
+        <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+        <script src="vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+        
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+        
+        <script src="js/functions.js"></script>
+    
+    
+    </body>
+
+<!-- Mirrored from byrushan.com/projects/ma/1-5-2/jquery/profile-about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 May 2016 10:20:37 GMT -->
+</html>
