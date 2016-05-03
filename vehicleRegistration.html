@@ -1,134 +1,74 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Search for a Trip</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-	<div class="container">
-		<div class="jumbotron">
-			<h1> Vehicle Registration </h1> 
-		</div>
-	</div>
-			
-	<div class="container">
-		<form role="form">
-			<div class="form-group">
-				<div class="col-sm-6">
-					<label for="inputdefault">Vehicle ID</label>
-					<input class="form-control" id="inputdefault" type="text" 				placeholder="License Plate ID, e.g. NS 1234">
-
-					<label for="inputdefault">Car Model</label>
-					<input class="form-control" id="inputdefault" type="text" 					placeholder="Year e.g. 2015">
-				</div>
-			</div>
-		</div>
-		  
-
-		<div class="form-group">
-			<div class="row">
-				<div class="col-sm-6">
-					<label for="inputdefault"></label>
-				</div>
-				<div class="col-sm-6">
-					<br><br>
-					<label for="inputdefault">Select your Driver's license expiration date</label>
-				</div>
-			</div>
-		</div>
-
-		 </div>
-		  
-		  
-	  
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Vihecle Registration</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.5">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script>
+		  var loadFile = function(event, imgID) {
+		    var output = document.getElementById(imgID);
+		    output.src = URL.createObjectURL(event.target.files[0]);
+		  };
+		</script>
+	</head>
+	<body>
 		<div class="container">
-			<div class="col-sm-2"> 
-				<fieldset class="form-group">
-					<label for="addPlayer"></label>
-					<fieldset class="form-group">
-					</fieldset>
-				</fieldset>
+			<div class="jumbotron">
+				<h1> Vehicle Registration</h1> 
 			</div>
-		
-			<div class="col-sm-2"> 
-				<fieldset class="form-group">
-					<label for="addPlayer">No. seats available </label>
-					<select class="form-control" id="addPlayer">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-						<option>6</option>
-						<option>7</option>
-					</select>
-				</fieldset>
-			</div>
-	   
-	   
-			<div class="col-sm-2"> 
-				<fieldset class="form-group">
-					<label for="addPlayer">Day </label>
-					<select class="form-control" id="addPlayer">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-						<option>6</option>
-						<option>7</option>
-						<option>8</option>
-						<option>9</option>
-						<option>10</option>
-						<option>11</option>
-						<option>12</option>
-						<option>13</option>
-						<option>14</option>
-						<option>15</option>
-						<option>16</option>
-						<option>17</option>
-						<option>18</option>
-						<option>19</option>
-						<option>20</option>
-						<option>21</option>
-						<option>22</option>
-						<option>23</option>
-						<option>24</option>
-						<option>25</option>
-						<option>26</option>
-						<option>27</option>
-						<option>28</option>
-						<option>29</option>
-						<option>30</option>
-						<option>31</option>
-					</select>
-					<br>
-				</fieldset>
-			</div>
-	
-	
-			</form>
-	</div>
-</div>
-<div class="row">
-	<div class="container">
-		<div class="col-sm-12"> 
-			<br><br>
-			<button type="button" class="btn btn-primary btn-block">REGISTER VEHICLE</button>
-		</div>
-	</div>
-</div>
-</div>
-	
-	
-<br>
 
-		  
-</div>
-</body>
+			<form>
+				<div class="col-sm-3"> </div>
+				<div class="col-sm-6"> 
+		        <div class="form-group">
+		            <fieldset class="form-group">
+		                <label  for="inputID">Vehicle ID </label>
+		                <br/>
+						<input class="form-control" type="text" name="vehicleID" for="inputVehicleID" placeholder="License Plate ID, e.g. NS 1234">	
+					</fieldset>
+
+		            <fieldset class="form-group">
+		                <label for="inputCarModel">Car Model</label>
+		                <br/>
+		                <input class="form-control" type="text" name="carModel" for="inputCarModel" placeholder="e.g. 2012 TOYOTA Yaris">		
+					</fieldset>
+
+		            <fieldset class="form-group">
+		                <label for="inputNoSeats">No. of Seats</label>
+		                <br/>
+		                <input class="form-control" type="value" name="noOfSeats" for="inputSeats" placeholder="e.g. 5">		
+		            </fieldset>
+
+		            <fieldset>
+		            	<label for="uploadDriverLicense">Upload Driver License</label>
+		                <br/>
+		            	<input type="file" name="driverLicensePic" accept="image/*" onchange="loadFile(event, 'preview1')">
+		            	<img id="preview1" style="max-height: 100px;"/>
+		            </fieldset>	
+		            <br/>
+		            <fieldset>
+		            	<label for="uploadDriverLicense">Upload Vehicle License</label>
+		                <br/>
+		            	<input type="file" name="carLicensePic" accept="image/*" onchange="loadFile(event, 'preview2')">
+		            	<img id="preview2" style="max-height: 100px;"/>
+		            </fieldset>	
+		            <br/>
+		            <fieldset>
+		            	<label for="uploadDriverLicense">Upload Vehicle Picture(Optional)</label>
+		                <br/>
+		            	<input type="file" name="carPic" accept="image/*" onchange="loadFile(event, 'preview3')">
+		            	<img id="preview3" style="max-height: 100px;"/>
+		            </fieldset>	
+		            <br/>
+		        </div>
+
+		        <br/>
+		        <button type="submit" class="btn btn-primary">Verify your vehicle</button>
+		    </div>
+		    </form>
+		</div>
+	</body>
 </html>
