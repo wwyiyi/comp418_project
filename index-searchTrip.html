@@ -6,63 +6,84 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.5">
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/jquery-ui.css">
-  		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  		<script src="assets/js/jquery-ui.js"></script>
 		<script src="assets/js/jquery-1.11.1.min.js"></script>
-		<script src="assets/js/jquery-1.11.1.js"></script>
+		<script src="assets/js/jquery.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script>
 		  $(function() {
-		    $( "#datepicker" ).datepicker();
+		    $( "#from" ).datepicker({
+		      defaultDate: "+1w",
+		      changeMonth: true,
+		      numberOfMonths: 3,
+		      onClose: function( selectedDate ) {
+		        $( "#to" ).datepicker( "option", "minDate", selectedDate );
+		      }
+		    });
+		    $( "#to" ).datepicker({
+		      defaultDate: "+1w",
+		      changeMonth: true,
+		      numberOfMonths: 3,
+		      onClose: function( selectedDate ) {
+		        $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+		      }
+		    });
 		  });
 		</script>
 	</head>
 	<body>
-		<div class="row">
 			<div class="container">
 				<div class="jumbotron">
 					<h1> Search for a Trip </h1> 
 				</div>
 		  
-		
-				<div class="col-sm-3"> 
-					<fieldset class="form-group">
-						<label for="addPlayer">Select Departure City </label>
-						<select class="form-control" id="addPlayer">
-							<option>Guangzhou</option>
-							<option>Dongguan</option>
-							<option>Hong Kong</option>
-							<option>Shenzhen</option>
-						</select>
-						<br>
+				
+				<div class="row">
+					<div class="col-sm-3"> 
 						<fieldset class="form-group">
+							<label for="addPlayer">Select Departure City </label>
+							<select class="form-control" id="addPlayer">
+								<option>Guangzhou</option>
+								<option>Dongguan</option>
+								<option>Hong Kong</option>
+								<option>Shenzhen</option>
+							</select>
+							<br>
+							<fieldset class="form-group">
+								<br>
+							</fieldset>
+						</fieldset>
+					</div>
+				
+					<div class="col-sm-3"> 
+						<fieldset class="form-group">
+							<label for="addPlayer">Select Destination City </label>
+							<select class="form-control" id="addPlayer">
+								<option>Guangzhou</option>
+								<option>Dongguan</option>
+								<option>Hong Kong</option>
+								<option>Shenzhen</option>
+							</select>
 							<br>
 						</fieldset>
-					</fieldset>
-				</div>
-			
-				<div class="col-sm-3"> 
-					<fieldset class="form-group">
-						<label for="addPlayer">Select Destination City </label>
-						<select class="form-control" id="addPlayer">
-							<option>Guangzhou</option>
-							<option>Dongguan</option>
-							<option>Hong Kong</option>
-							<option>Shenzhen</option>
-						</select>
-						<br>
-					</fieldset>
-				</div>
-				<div class="col-sm-3"> 
-					<label for="addPlayer">Date</label><br/>
-					<input type="text" id="datepicker">
-				</div>
-				<div class="col-sm-3"> 
-					<br/><br/>
-					<button type="button" class="btn btn-primary btn-block">SEARCH</button>
-				</div>
+					</div>
+					<div class="col-sm-2"> 
+						<label for="from">Date from</label>
+						<br/>
+						<input type="text" id="from" name="from">
+					</div>
+					<div class="col-sm-2"> 
+						<label for="to">to</label>
+						<br/>
+						<input type="text" id="to" name="to">
+					</div>
+
+					<div class="col-sm-2"> 
+						<br/>
+						<button type="button" class="btn btn-primary btn-block">SEARCH</button>
+					</div>
+
 			</div>
-
 		</div>
-
 	</body>
 </html>
